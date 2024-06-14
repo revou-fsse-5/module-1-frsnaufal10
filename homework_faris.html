@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Property Website</title>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="index.html">About</a></li>
+            <li><a href="properties.html">Properties</a></li>
+            <li><a href="rent.html">Rent</a></li>
+        </ul>
+    </nav>
+
+    <!-- About Page -->
+    <div id="about">
+        <h1>About Us</h1>
+        <p>Selamat datang di Tentrem Residence. Kami menyediakan akomodasi low-rise apartment yang cocok untuk pekerja di Jakarta. Akomodasi kami terletak di area Transit-Oriented Development di Jakarta sehingga akses ke transportasi masal sangat dekat untuk mempermudah mobilisasi penghuni dan menghindari kemacetan. Tersedia unit 1 BR dan 2 BR yang cocok untuk pekerja single dan yang sudah berpasangan.</p>
+    </div>
+
+    <!-- Properties Page -->
+    <div id="properties">
+        <h1>Properties in Jakarta</h1>
+        <ul>
+            <li>Property 1: Tentrem Residence Dukuh Atas </li>
+            <li>Property 2: Tentrem Residence Blok M </li>
+            <li>Property 3: Tentrem Residence Rasuna Said </li>
+            <li>Property 4: Tentrem Residence Jatinegara </li>
+            <li>Property 5: Tentrem Residence Lebak Bulus </li>
+        </ul>
+    </div>
+
+    <!-- Rent Page -->
+    <div id="rent">
+        <h1>Rent a Property</h1>
+        <form action="submit_rent_request.html" method="post">
+            <label for="contact">Contact Information:</label><br>
+            <input type="text" id="contact" name="contact"><br><br>
+
+            <label for="area">Preferred Area:</label><br>
+            <textarea id="area" name="area"></textarea><br><br>
+
+            <label for="duration">Duration:</label><br>
+            <input type="radio" id="three_months" name="duration" value="3 Bulan">
+            <label for="three_months">3 Bulan</label><br>
+            <input type="radio" id="six_months" name="duration" value="6 Bulan">
+            <label for="six_months">6 Bulan</label><br>
+            <input type="radio" id="one_year" name="duration" value="1 Tahun">
+            <label for="one_year">1 Tahun</label><br><br>
+
+            <label for="start_date">Rent Start Date:</label><br>
+            <input type="date" id="start_date" name="start_date"><br><br>
+
+            <label for="type">Property Type:</label><br>
+            <select id="type" name="type">
+                <option value="1 BR">1 BR</option>
+                <option value="2 BR">2 BR</option>
+            </select><br><br>
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>
