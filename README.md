@@ -9,8 +9,9 @@ Selamat datang di Tentrem Residence:
   - Halaman ini menjelaskan bagaimana akomodasi di Tentrem Residence berbeda dengan kos ataupun apartemen pada umumnya.
   
 ### 🏙️ Properties
-- **List of Properties in Jakarta**: 
+- **List of Properties in Jakarta**:
   - Halaman ini berisi daftar akomodasi Tentrem Residence di penjuru Jakarta .
+  ![Tentrem Residence Dukuh Atas](image/apartment_1.jpg)
 
 ### 🏡 Rent
 - **Submit a Request to Rent**: 
