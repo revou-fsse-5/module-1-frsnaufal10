@@ -30,5 +30,5 @@ Selamat datang di Tentrem Residence:
 - **About**: `index.html`
 - **Properties**: `properties.html`
 - **Rent**: `rent.html`
-
+https://revou-fsse-5.github.io/module-1-frsnaufal10/
 Website ini didesain sesimpel mungkin sehingga dapat pengguna dapat mencari informasi penting mengenai akomodasi kami dengan mudah dan mencari akomodasi di daerah yang diinginkan
