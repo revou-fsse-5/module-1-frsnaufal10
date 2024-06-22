@@ -40,7 +40,6 @@ section {
     background-repeat: no-repeat;
     background-position: center;
     z-index: -1;
-    border-radius: 10px;
 }
 
 #about,
@@ -52,10 +51,15 @@ section {
     justify-content: center;
 }
 
-#about.container {
-    max-width: 600px;
+#about.container,
+#properties.container {
+    max-width: 800px;
     text-align: center;
     justify-content: center;
+    margin: 0 auto;
+    background-color: #f3f9ec;
+    border-radius: 20px ;
+    padding: 20px;
 }
 
 /* Header and Navigation Styles */
@@ -133,6 +137,7 @@ section {
     max-width: 100%;
     height: auto;
     transition: transform 0.3s ease;
+    padding: 10px;
 }
 
 #properties img:hover {
