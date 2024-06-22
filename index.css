@@ -159,7 +159,6 @@ section {
         padding: 1rem;
     }
     .nav {
-        flex-direction: column;
         gap: 0.5rem;
     }
 
