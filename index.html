@@ -15,43 +15,45 @@
     <header class="header">
         <div class="logo">Tentrem Residence</div>
         <nav class="nav">
-            <a href="index.html">About</a>
-            <a href="properties.html">Properties</a>
-            <a href="rent.html">Rent</a>
+            <a href="#about">About</a>
+            <a href="#properties">Properties</a>
+            <a href="#rent">Rent</a>
         </nav>
-    </header><br>
+    </header><br><br>
 
     <!-- About Page -->
     <div id="about" class="container">
         <h1>About Us</h1>
         <p>Selamat datang di Tentrem Residence. Kami menyediakan akomodasi low-rise apartment yang cocok untuk pekerja di Jakarta. Akomodasi kami terletak di area Transit-Oriented Development di Jakarta sehingga akses ke transportasi masal sangat dekat untuk mempermudah mobilisasi penghuni dan menghindari kemacetan. Tersedia unit 1 BR dan 2 BR yang cocok untuk pekerja single dan yang sudah berpasangan.</p>
-    </div><br><br>
+    </div><br>
 
     <!-- Properties Page -->
     <div id="properties" class="container">
         <h1>Properties in Jakarta</h1>
-        <ul>
-            <li>
-                Tentrem Residence Dukuh Atas<br>
-                <img src="image/apartment_1.jpg" alt="Tentrem Residence Dukuh Atas" width="300">
-            </li>
-            <li>
-                Tentrem Residence Blok M<br>
-                <img src="image/apartment_2.jpg" alt="Tentrem Residence Blok M" width="300">
-            </li>
-            <li>
-                Tentrem Residence Rasuna Said<br> 
-                <img src="image/apartment_3.jpg" alt="Tentrem Residence Rasuna Said" width="300">
-            </li>
-            <li>
-                Tentrem Residence Jatinegara<br> 
-                <img src="image/apartment_4.jpg" alt="Tentrem Residence Jatinegara" width="300">
-            </li>
-            <li>
-                Tentrem Residence Lebak Bulus<br> 
-                <img src="image/apartment_5.jpg" alt="Tentrem Residence Lebak Bulus" width="300">
-            </li>
-        </ul>
+        <div id="properties_image" class="container">
+            <ul>
+                <li>
+                    Tentrem Residence Dukuh Atas<br>
+                    <img src="image/apartment_1.jpg" alt="Tentrem Residence Dukuh Atas" width="300">
+                </li>
+                <li>
+                    Tentrem Residence Blok M<br>
+                    <img src="image/apartment_2.jpg" alt="Tentrem Residence Blok M" width="300">
+                </li>
+                <li>
+                    Tentrem Residence Rasuna Said<br> 
+                    <img src="image/apartment_3.jpg" alt="Tentrem Residence Rasuna Said" width="300">
+                </li>
+                <li>
+                    Tentrem Residence Jatinegara<br> 
+                    <img src="image/apartment_4.jpg" alt="Tentrem Residence Jatinegara" width="300">
+                </li>
+                <li>
+                    Tentrem Residence Lebak Bulus<br> 
+                    <img src="image/apartment_5.jpg" alt="Tentrem Residence Lebak Bulus" width="300">
+                </li>
+            </ul>
+        </div><br>
     </div><br><br>
 
     <!-- Rent Page -->
@@ -81,16 +83,22 @@
 
             <label for="durasi">Durasi:</label>
             <select id="durasi" name="durasi">
-                <option value="1 Bulan">1 Bulan</option>
-                <option value="2 Bulan">2 Bulan</option>
                 <option value="3 Bulan">3 Bulan</option>
+                <option value="6 Bulan">6 Bulan</option>
+                <option value="12 Bulan">12 Bulan</option>
             </select><br>
 
             <label for="start_date">Tanggal Mulai Sewa:</label>
             <input type="date" id="start_date" name="start_date"><br>
 
             <input type="submit" value="Submit">
-        </form>
+        </form><br>
     </div>
+
+    <!-- Footer Page -->
+    <footer class="footer">
+        <h1>Tentrem Residence by Faris Naufal</h1>
+        <h2>Contact Us at 08XX-XXXX-XXXX</h2>
+    </footer>
 </body>
 </html>
