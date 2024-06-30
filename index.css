@@ -1,6 +1,20 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url('fonts/Montserrat-VariableFont_wght.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('fonts/Montserrat-Italic-VariableFont_wght.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
 /* General Styles */
 body {
-    font-family: Roboto, sans-serif;
+    font-family: 'Montserrat',sans-serif;
     margin: 0;
     padding: 0;
     color: #333;
@@ -14,17 +28,6 @@ body {
     background-size: cover;
     background-position: center;
     background-color: #e0e0e0;
-}
-
-/* Container for Sections */
-section {
-    background-color: rgba(155, 245, 130, 0.9);
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin: 20px auto;
-    max-width: 900px;
-    position: relative;
 }
 
 /* Background Image for Sections */
@@ -66,7 +69,8 @@ section {
 }
 
 #about.container,
-#properties_image.container {
+#properties_image.container,
+#facilities-header.container {
     max-width: 800px;
     text-align: center;
     justify-content: center;
@@ -88,19 +92,26 @@ section {
     background-color: #d7f4aa;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     padding: 1rem 0;
+    opacity: 0;
+    transform: translateY(-100%);
+    animation: slideDown 1s forwards;
 }
 
 .header .logo {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 2.5rem;
     text-align: center;
     color: #045111;
     margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    animation-delay: 0.2s;
 }
 
 .nav {
     display: flex;
     gap: 1.3rem;
+    animation: slideDown 1s forwards;
+    animation-delay: 0.4s;
 }
 
 .nav a {
@@ -109,6 +120,7 @@ section {
     font-size: 1.3rem;
     font-weight: 500;
     transition: color 0.3s, transform 0.3s;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .nav a:hover {
@@ -116,26 +128,36 @@ section {
     transform: translateY(-2px);
 }
 
+@keyframes slideDown {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 /* About Section */
 #about h1,
 #about p {
     text-align: center;
     justify-content: center;
+    font-family: 'Montserrat',sans-serif;
 }
 
 #about h1 {
     font-size: 2rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 /* Properties Section */
 #properties h1 {
     padding: 10px;
+    font-family: 'Montserrat',sans-serif;
     font-size: 2rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     text-align: center;
     color:#deebe0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 #properties ul {
@@ -149,6 +171,8 @@ section {
     list-style: none;
     margin: 20px;
     text-align: center;
+    list-style-type: disc;
+    list-style-position: inside;
 }
 
 #properties img {
@@ -158,18 +182,67 @@ section {
     height: auto;
     transition: transform 0.3s ease;
     padding: 10px;
+    cursor: pointer;
 }
 
 #properties img:hover {
     transform: scale(1.7);
 }
 
+/* Facilities Section */ 
+#facilities h1 {
+    padding: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    color: #025b0f;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+#facilities p {
+    text-align: center;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.grid-container {
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    gap: 20px;
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+
+.grid-item.gym {
+    grid-column: span 2;
+    grid-row: span 1;
+}
+
+.grid-item.taman {
+    grid-column: span 1;
+    grid-row: span 2;
+}
+
+.grid-item.parkir {
+    grid-column: span 3;
+    grid-row: span 1;
+}
+
 /* Rent Section */
 #rent h1 {
     padding: 20px;
+    font-family: 'Montserrat',sans-serif;
     text-align: center;
     color: #deebe0;
     font-size: 2rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 #rent form {
@@ -206,6 +279,7 @@ section {
     color: rgb(137, 250, 137);
 }
 
+/* Footer Section */
 .footer {
     display: flex;
     flex-direction: column;
